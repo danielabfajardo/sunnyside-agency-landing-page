@@ -1,0 +1,44 @@
+.features {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        &__2 {
+            background-image: url("/images/desktop/image-transform.jpg");
+        }
+        &__3 {
+            background-image: url("/images/desktop/image-stand-out.jpg");
+        }
+        &__5 {
+            background-image: url("/images/desktop/image-graphic-design.jpg");
+        }
+        &__6 {
+            background-image: url("/images/desktop/image-photography.jpg");
+        }
+
+        .card {
+            //border: 1px solid red;
+            text-align: left;
+            font-family: $secondary-font-family;
+
+            &__heading {
+                font-size: $font-xlg;
+            }
+            &__text {
+                font-family: $primary-font-family;
+                font-weight: $secondary-font-weight-normal;
+                color: $darkGrayishBlue;
+                
+                p {
+                    line-height: 1.7;
+                }
+            }
+            &__link {
+                cursor: pointer;
+                text-decoration: underline;
+                text-decoration-thickness: 10px;
+                text-decoration-color: $yellow;
+            }
+        }
+    }
+}

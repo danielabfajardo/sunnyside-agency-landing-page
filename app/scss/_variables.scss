@@ -1,0 +1,30 @@
+//Colors
+//Primary
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkDesaturatedCyan : hsl(167, 40%, 24%); //(graphic design text)
+$darkBlue: hsl(198, 62%, 26%); //(photography text)
+$darkModerateCyan: hsl(168, 34%, 41%); //(footer)
+
+// Neutral
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+//Font sizes
+$font-sm: 0.875rem; //14px
+$font-med: 1.15rem; //18px
+$font-lg: 1rem;
+$font-xlg: 1.9rem;
+
+$primary-font-size: 1.8rem;
+$heading-line-height: 1.2;
+$text-line-height: 1.7;
+$primary-font-color: $darkGrayishBlue;
+$primary-font-family: 'Barlow', sans-serif;
+$secondary-font-family: 'Fraunces', serif;
+$primary-font-weight: 600;
+$secondary-font-weight-normal: 700;
+$secondary-font-weight-bold: 900;

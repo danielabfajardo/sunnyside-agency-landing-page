@@ -5,42 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header class="header">
+    <div>
+    <nav class="container flex flex-jc-sb flex-ai-c"> <!--container--pall-->
+      <a href="/" class="header__logo">
+        <img src="/images/logo.svg" alt="Sunnyside Logo"/>
+      </a>
 
-  We are creatives
+      <a href="#" id="btn-hamburger" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="flex flex-ai-c">
+      <div class="header__links hide-for-mobile">
+        <a href="#" class="button">About</a>
+        <a href="#" class="button">Services</a>
+        <a href="#" class="button">Projects</a>
+      </div>
 
-  Transform your brand
+      <button type="button" class="button header__btn">CONTACT</button><!--hide-for-mobile-->
+    </div>
+    </nav>
+  </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <!--
+    <div class="header__menu has-fade">
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Projects</a>
+    </div>
+    -->
 
-  Learn more
+    <div class="hero">
+      <div class="hero__title container container--py">WE ARE CREATIVES</div>
 
-  Stand out to the right audience
+      <a href="/">
+        <img src="/images/icon-arrow-down.svg" class="hero__arrow" alt="Downwards arrow"/>
+      </a>
+    </div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+  </header>
 
-  Learn more
+  <div id="features" class="features">
+    <div class="grid">
+      <div class="grid-box grid__1 card container flex flex-jc-c flex-fd-col">
+        <div class="card__heading">Transform your brand</div>
+        <div class="card__text">
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+        </div>
+        <div class="card__link">LEARN MORE</div>
+      </div>
+      <div class="grid-box grid__2"></div>
+      <div class="grid-box grid__3"></div>
+      <div class="grid-box grid__4 card container flex flex-jc-c flex-fd-col">
+        <div class="card__heading">Stand out to the right audience</div>
+        <div class="card__text">
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+        </div>
+        <div class="card__link">LEARN MORE</div>
+      </div>
+      <div class="grid-box grid__5 card container flex flex-jc-c flex-fd-col">
+        <div class="card__heading">Graphic design</div>
+        <div class="card__text">
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
+      </div>
+      <div class="grid-box grid__6 card container flex flex-jc-c flex-fd-col">
+        <div class="card__heading">Photography</div>
+        <div class="card__text">
+          <p>
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
+  <!--
   Client testimonials
 
   We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
@@ -59,10 +121,13 @@
   Services
   Projects
   Contact
+  -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">danielabfajardo</a>.
   </div>
+
+  <script src="/app/js/script.js"></script>
 </body>
 </html>

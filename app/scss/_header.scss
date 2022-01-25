@@ -1,0 +1,59 @@
+.header {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-image: url("/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include breakpoint-up(large) {
+        background-image: url("/images/desktop/image-header.jpg");
+    }
+
+    nav {
+        position: relative;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+    }
+    &__logo {
+        img {
+            width: 8.9rem;
+            height: 2rem;
+        }
+    }
+    &__links {
+        a {
+            position: relative;
+            font-size: $font-med;
+            font-family: $primary-font-family;
+            color: white;
+            //transition: color 300ms ease-in-out;
+            margin-right: 2rem;
+        }
+    }
+    &__btn {
+        background-color: $white;
+    }
+    &__menu {
+
+    }
+
+    .hero {
+        //border: 1px solid red;
+        &__title {
+            color: $white;
+            font-size: 3rem;
+            font-family: $secondary-font-family;
+            font-weight: $secondary-font-weight-bold;
+            line-height: $heading-line-height;
+            letter-spacing: 7px;
+        }
+        &__arrow {
+            animation-name: arrow-down;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+}
