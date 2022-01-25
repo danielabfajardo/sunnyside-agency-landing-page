@@ -1,8 +1,11 @@
 .features {
     .grid {
         display: grid;
-        grid-template-columns: 50% 50%;
-
+        grid-template-columns: 100%;
+       
+        @include breakpoint-up(large) {  
+            grid-template-columns: 50% 50%;
+        }
         &__2 {
             background-image: url("/images/desktop/image-transform.jpg");
         }
@@ -17,27 +20,51 @@
         }
 
         .card {
-            //border: 1px solid red;
             text-align: left;
             font-family: $secondary-font-family;
 
             &__heading {
                 font-size: $font-xlg;
+                font-weight: $secondary-font-weight-bold;
             }
             &__text {
                 font-family: $primary-font-family;
                 font-weight: $secondary-font-weight-normal;
-                color: $darkGrayishBlue;
-                
-                p {
-                    line-height: 1.7;
-                }
+                color: $darkGrayishBlue;       
+                p { line-height: 1.7; }
             }
             &__link {
                 cursor: pointer;
-                text-decoration: underline;
-                text-decoration-thickness: 10px;
-                text-decoration-color: $yellow;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-width: 6px;
+                    border-color: $yellow;
+                    border-style: solid;
+                    z-index: -1;
+                    border-radius: 50px;
+                    width: 9rem;
+                    transform: translate(-0.5rem, 0.88rem);
+                    opacity: 0.3;
+                    transition: opacity 0.2s ease-in-out;
+                }
+                &:hover::before { opacity: 1; }
+            }
+            &:nth-last-child(3) { 
+                .link2::before {
+                    border-color: $softRed;
+                }
+                .link2:hover::before {
+                    border-color: $softRed;
+                }
+            }
+            &:nth-last-child(2) {
+                color: $darkDesaturatedCyan;
+                p { color: $darkDesaturatedCyan; }  
+            }
+            &:last-child {
+                color: $darkBlue;
+                p { color: $darkBlue; }
             }
         }
     }

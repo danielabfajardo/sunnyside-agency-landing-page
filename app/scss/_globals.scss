@@ -81,11 +81,20 @@ a, a:visited, a:hover {
     &-jc-c {
         justify-content: center;
     }
+    &-jc-fe {
+        justify-content: flex-end;
+    }
     &-ai-c {
         align-items: center;
     }
+    &-ai-fe {
+        align-items: flex-end;
+    }
     &-fd-col {
         flex-direction: column;
+    }
+    &-fd-row {
+        flex-direction: row;
     }
 }
 
@@ -107,16 +116,20 @@ a, a:visited, a:hover {
 }
 
 .grid-box {
-    height: 37rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: left;
-    gap: 50px;
-    padding: 10.6875rem 7.7rem;
+    gap: 25px;
+    height: 30rem;
+    padding: 25% 16%;
 }
 
-//Visibility
+.wrap {
+    text-align: center;
+    transform: translateY(8rem);
+}
+
 .hide-for-mobile {
     @include breakpoint-down(medium) {
         display: none;
