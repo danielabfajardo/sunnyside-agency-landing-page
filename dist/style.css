@@ -115,6 +115,7 @@ a, a:visited, a:hover {
   border: none;
   border-radius: 50px;
   padding: 1rem 1.5rem;
+  color: #23303e;
   cursor: pointer;
   font-family: "Fraunces", serif;
   font-weight: 700;
