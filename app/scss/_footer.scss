@@ -1,0 +1,48 @@
+.footers {
+    background-color: #90d5c5;
+    .footer {
+        gap: 1.8rem;
+        &__logo {
+            padding-top: 4rem;
+            width: 9.375rem;
+            filter: invert(0%) sepia(100%) saturate(3000%) hue-rotate(80deg) brightness(40%) contrast(70%);
+        }
+        &__menu {
+            gap: 3.7rem;
+            a {
+                transition: all 300ms ease-in-out;
+                color: $darkModerateCyan;
+                &:hover {
+                    color:$white;
+                }
+            }
+        }
+        &__socials {
+            margin-top: 2.5rem;
+            gap: 2.5rem;
+            padding-bottom: 4rem;
+            a {
+                transition: all 300ms ease-in-out;
+                &:hover {
+                    filter: brightness(0%) invert(100%);
+                }
+            }
+        }
+    }
+
+    .attribution {
+        padding: 1.3rem 0rem;
+        background-color: $darkModerateCyan;
+        font-size: 0.8rem;
+        color: $darkDesaturatedCyan;
+        letter-spacing: 1px;
+        text-align: center;
+        a {
+            transition: all 300ms ease-in-out;
+            color: #90d5c5;
+            &:hover {
+                color:$white;
+            }
+        }
+    }
+}

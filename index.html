@@ -11,16 +11,11 @@
   <link rel="stylesheet" href="/dist/style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header class="header">
-    <div>
-      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+    <div class="container container--px">
+      <nav class="flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img src="/images/logo.svg" alt="Sunnyside Logo"/>
         </a>
@@ -57,16 +52,16 @@
     <div class="hero">
       <div class="hero__title container container--py">WE ARE CREATIVES</div>
 
-      <a href="/">
+      <a href="#feature">
         <img src="/images/icon-arrow-down.svg" class="hero__arrow" alt="Downwards arrow"/>
       </a>
     </div>
 
   </header>
 
-  <div id="features" class="features">
+  <div id="feature" class="features">
     <div class="grid">
-      <div class="grid-box grid__1 card container flex flex-fd-col flex-jc-c">
+      <div class="grid-box info grid__1 card container flex flex-fd-col flex-jc-c">
         <div class="card__heading">Transform your brand</div>
         <div class="card__text">
           <p>
@@ -78,7 +73,7 @@
       </div>
       <div class="grid-box grid__2"></div>
       <div class="grid-box grid__3"></div>
-      <div class="grid-box grid__4 card container flex flex-jc-c flex-fd-col">
+      <div class="grid-box info grid__4 card container flex flex-jc-c flex-fd-col">
         <div class="card__heading">Stand out to the right audience</div>
         <div class="card__text">
           <p>
@@ -110,17 +105,14 @@
     </div>
   </div>
 
-  <section class="testimonials">
-    <div class="wrapper container container--pall flex flex-fd-col flex-ai-c">
-      <div class="wrapper__title">CLIENT TESTIMONIALS</div>
-      <div class="cards flex flex-fd-row">
+  <section class="testimonials container container--py">
+      <div class="testimonials__title">CLIENT TESTIMONIALS</div>
+      <div class="testimonials__cards flex flex-fd-row">
         <div class="card">
           <img src="/images/image-emily.jpg" class="card__photo" alt="Emily R."/>
-          <div class="card__text">
-            <p>
-              We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-            </p>
-          </div>
+          <p class="card__text">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
           <div class="card__client">
             <div class="card__client__name">Emily R.</div>
             <div class="card__client__role">Marketing Director</div>
@@ -128,11 +120,9 @@
         </div>
         <div class="card">
           <img src="/images/image-thomas.jpg" class="card__photo" alt="Thomas S."/>
-          <div class="card__text">
-            <p>
-              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-            </p>
-          </div>
+          <p class="card__text">
+            Sunnyside's enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
           <div class="card__client">
             <div class="card__client__name">Thomas S.</div>
             <div class="card__client__role">Chief Operating Officer</div>
@@ -140,52 +130,55 @@
         </div>
         <div class="card">
           <img src="/images/image-jennie.jpg" class="card__photo" alt="Jennie F."/>
-          <div class="card__text">
-            <p>
-              Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-            </p>
-          </div>
+          <p class="card__text">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
           <div class="card__client">
             <div class="card__client__name">Jennie F.</div>
             <div class="card__client__role">Business Owner</div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
-  <section class="photos">
+  <section class="gallery">
     <div class="grid">
-      <div class="grid__photo-1">
-        <img src="" alt=""/>
-      </div>
-      <div class="grid__photo-2">
-        <img src="" alt=""/>
-      </div>
-      <div class="grid__photo-3">
-        <img src="" alt=""/>
-      </div>
-      <div class="grid__photo-4">
-        <img src="" alt=""/>
-      </div>
+        <div class="grid-box grid__1"></div>
+        <div class="grid-box grid__2"></div>
+        <div class="grid-box grid__3"></div>
+        <div class="grid-box grid__4"></div>
     </div>
   </section>
 
-  <footer>
+  <footer class="footers">
+    <div class="footer container container--px flex flex-fd-col flex-ai-c">
+      <img src="/images/logo.svg" class="footer__logo" alt="Sunnyside Logo"/>
+      <div class="footer__menu flex">
+        <a href="/">About</a>
+        <a href="/">Services</a>
+        <a href="/">Projects</a>
+      </div>
+      <div class="footer__socials flex">
+        <a href="/">
+          <img src="/images/icon-facebook.svg" alt="Facebook"/>
+        </a>
+        <a href="/">
+          <img src="/images/icon-instagram.svg"  alt="Instagram"/>
+        </a>
+        <a href="/">
+          <img src="/images/icon-twitter.svg" alt="Twitter"/>
+        </a>
+        <a href="/">
+          <img src="/images/icon-pinterest.svg" alt="Pinterest"/>
+        </a>
+      </div>
+    </div>
 
+    <div class="attribution container--px">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/danielabfajardo" target=”_blank”> danielabfajardo</a>.
+    </div>
   </footer>
-
-  <!--
-  About
-  Services
-  Projects
-  Contact
-  -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">danielabfajardo</a>.
-  </div>
 
   <script src="/app/js/script.js"></script>
 </body>

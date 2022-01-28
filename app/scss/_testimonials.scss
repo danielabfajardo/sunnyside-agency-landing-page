@@ -1,0 +1,53 @@
+.testimonials {
+    @include breakpoint-down(medium) {
+        padding: 15% 10%;
+    }
+    &__title {
+        font-family: $secondary-font-family;
+        color: $grayishBlue;
+        font-weight: $secondary-font-weight-bold;
+        line-height: $heading-line-height;
+        letter-spacing: 4px;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        @include breakpoint-up(medium) {
+            letter-spacing: 7px;
+            margin-bottom: 5rem;
+            font-size: $font-xlg;
+        }
+    }
+    &__cards {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 3rem;
+        @include breakpoint-up(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1.875rem;
+        }
+        .card {
+            &__photo {
+                border-radius: 50%;
+                height: 4.375rem;
+            }
+            &__text {
+                color: $veryDarkGrayishBlue;
+                padding: 1rem 0rem;
+                @include breakpoint-up(medium) {
+                    padding: 2rem 0rem;
+                }
+            }
+            &__client {
+                &__name {
+                    font-family: $secondary-font-family;
+                }
+                &__role {
+                    color: $grayishBlue;
+                    margin-top: 3%;
+                    font-size: $font-sm;
+                }
+            }
+        }
+    }
+}
