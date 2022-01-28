@@ -1,12 +1,28 @@
 .features {
     .grid {
-        &__2 { background-image: url("/images/mobile/image-transform.jpg"); }
-        &__3 { background-image: url("/images/mobile/image-stand-out.jpg"); }
-        &__5 { background-image: url("/images/mobile/image-graphic-design.jpg"); }
-        &__6 { background-image: url("/images/mobile/image-photography.jpg"); }
+        display: grid;
+        grid-template-columns: 100%;
+        &__1 { order: 2; }
+        &__2 { 
+            background-image: url("/images/mobile/image-transform.jpg"); 
+            order: 1;
+        }
+        &__3 { 
+            background-image: url("/images/mobile/image-stand-out.jpg"); 
+            order: 3;
+        }
+        &__4 { order: 4;}
+        &__5 { 
+            background-image: url("/images/mobile/image-graphic-design.jpg"); 
+            order: 5;
+        }
+        &__6 { 
+            background-image: url("/images/mobile/image-photography.jpg"); 
+            order: 6;
+        }
         @include breakpoint-up(medium) {
-            display: grid;
             grid-template-columns: 50% 50%;
+            &__2 { order: 2; }
         }  
         @include breakpoint-up(large) {  
             &__2 { background-image: url("/images/desktop/image-transform.jpg"); }

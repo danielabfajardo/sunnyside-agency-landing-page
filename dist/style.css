@@ -123,9 +123,11 @@ a, a:visited, a:hover {
   transition: all 300ms ease-in-out;
 }
 
-.button:hover, button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: white;
+@media (min-width: 64em) {
+  .button:hover, button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
 }
 
 .grid-box {
@@ -143,7 +145,7 @@ a, a:visited, a:hover {
 }
 
 .info {
-  padding: 15% 10%;
+  padding: 20% 10%;
 }
 
 @media (min-width: 64em) {
@@ -379,25 +381,38 @@ p {
           flex-direction: column;
   z-index: 1;
   position: absolute;
-  width: 90%;
+  width: 82%;
   background: white;
   padding: 2.8125rem;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .header__menu a {
-  padding: 1.1rem;
+  padding-bottom: 2.9rem;
   color: #818498;
   text-align: center;
 }
 
 .header__menu button {
   background-color: #fad400;
-  font-size: 1.4rem;
-  margin-top: 1.1rem;
+  font-size: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header__menu::after {
+  position: absolute;
+  content: "";
+  top: -15px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent white transparent;
 }
 
 .header .hero__title {
@@ -427,28 +442,62 @@ p {
           animation-direction: alternate;
 }
 
+.features .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.features .grid__1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .features .grid__2 {
   background-image: url("/images/mobile/image-transform.jpg");
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .features .grid__3 {
   background-image: url("/images/mobile/image-stand-out.jpg");
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.features .grid__4 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .features .grid__5 {
   background-image: url("/images/mobile/image-graphic-design.jpg");
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .features .grid__6 {
   background-image: url("/images/mobile/image-photography.jpg");
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
 }
 
 @media (min-width: 40em) {
   .features .grid {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+  }
+  .features .grid__2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
