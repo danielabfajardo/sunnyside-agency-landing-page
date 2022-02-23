@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screencapture-sunnysidebydani-netlify-app-2022-02-23-13_41_52.png)
 
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-vanilla-js-rgIPJ0m8S](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-vanilla-js-rgIPJ0m8S)
-- Live Site URL: [Add live site URL here](https://app.netlify.com/sites/sunnysidebydani/overview)
+- Live Site URL: [https://app.netlify.com/sites/sunnysidebydani/overview](https://app.netlify.com/sites/sunnysidebydani/overview)
 
 ## My process
 
