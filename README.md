@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-vanilla-js-rgIPJ0m8S](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-vanilla-js-rgIPJ0m8S)
-- Live Site URL: [https://sunnysidebydani.netlify.app](https://sunnysidebydani.netlify.app)
+- Live Site URL: [https://sunnysidebydani.netlify.app](https://sunnysidebydaniela.netlify.app)
 
 ## My process
 
